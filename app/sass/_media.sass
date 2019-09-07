@@ -1,0 +1,511 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+//Super large: ≥1400px
++media-breakpoint-down(xxl)
+
+	.user-top_box
+		font-size: 18px
+
+	.footer_menu ul
+		justify-content: flex-end
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+	.footer_menu ul
+		justify-content: flex-start
+
+	.user-top_box
+		font-size: 14px
+
+	.user-right_tabs
+		padding: 15px 15px 20px
+
+	.tab-title li span
+		margin-left: 7px
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+	.header-left, .header-right
+		padding: 0 20px
+
+	.main
+		&-top
+			&_wrapper
+				width: 100%
+
+	.advantages
+		&-item
+			padding-top: 40px
+			padding-bottom: 40px
+			span
+				font-size: 21px
+
+	.left-menu
+		li
+			padding: 0 10px
+
+	.v-filter
+		padding: 10px 25px
+
+	.user_link, .user_link.money, .user_link.bank, .user_link.drop
+		width: 33.33%
+
+	.user_link
+		border-bottom: 1px solid #83939f
+
+	.user_link.messages
+		border-left: 1px solid #83939f
+
+	.user-top_box
+		justify-content: flex-end
+
+	.reg
+		margin-bottom: 60px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	
+	.p-1
+		padding-left: 0
+		padding-right: 0
+
+	.menu
+		display: inline-block
+		ul
+			li
+				padding-left: 0
+				padding-right: 40px
+
+	section
+    padding: 60px 0
+
+	.header
+		&-left
+			position: absolute
+			top: -100%
+			width: 100%
+			z-index: 8
+		&-right
+			width: 100%
+			&_bottom
+				display: flex
+				justify-content: space-between
+		&-btn
+			margin-left: 40px
+
+	.search-btn, .menu-btn
+		display: inline-block
+
+	.main
+		&-content
+			width: 100%
+			margin-left: 0
+		&-content
+			&_cta
+				padding: 25px 35px
+		&-btn
+			margin-top: 30px
+
+	.sidebar
+		display: none
+
+	.about
+		&-item
+			margin-bottom: 30px
+
+	.start
+		&-item
+			&_text
+				font-size: 18px
+
+	.second-page
+		.sidebar
+			display: block
+			position: relative
+			width: 100%
+			top: 0
+			padding: 20px 35px
+			background: #fff
+		.main
+			flex-direction: column
+			margin-top: 130px
+		.header-btn
+			position: absolute
+			bottom: -46px
+			left: 0
+			z-index: 25
+		.search-btn
+			display: none
+		.search-container
+			left: 0
+			width: 100%
+			padding: 10px 35px 10px 100px
+			&_close
+				display: none
+		.header
+			margin-bottom: 70px
+
+	.v-filter
+		width: 49%
+		display: inline-block
+		border-bottom: none
+		&-select
+			display: block
+		&-panel
+			display: none
+			margin-top: 20px
+		&_action
+			width: 100%
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+		&-btn
+			margin: 0 10px 5px
+
+	.sidebar
+		.search
+			display: none
+
+	.d-none-sidebar
+		display: none!important
+
+	.user-top
+		padding: 20px 40px 0
+
+	.user-wrapper
+		padding: 20px 40px 40px
+
+	.user-content
+		padding: 0
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+
+	.header
+		&-right
+			display: block
+			width: 100%
+			height: auto
+			padding: 10px 0
+			&_bottom
+				padding: 10px 20px 0
+		&-btn
+			display: inline-block
+
+	.logo
+		padding-bottom: 10px
+		border-bottom: 1px solid #fff
+		text-align: center
+
+	.main
+		margin-top: 116px
+		&-top
+			&_cta
+				padding: 15px 20px 15px 45px
+	
+	.cta-left
+		span
+			font-size: 24px
+
+	.about
+		border-bottom: 1px solid #000
+
+	.advantages
+		padding-top: 60px
+		.s-title
+			margin-bottom: 30px
+
+	.start-item
+		margin-bottom: 50px
+		&:nth-child(3), &:nth-child(4)
+			margin-bottom: 0
+
+	.footer
+		&_menu
+			ul
+				flex-direction: column
+				li
+					a
+						font-size: 16px
+
+	.v-filter_action
+		flex-direction: column
+		.v-filter-btn
+			margin: 0 auto 5px
+
+	.second-page
+		.main
+			margin-top: 173px
+		.header-right_bottom
+			justify-content: center
+
+	.user-top_box
+		flex-direction: column
+		justify-content: flex-start
+
+	.user_link, .user_link.bank, .user_link.drop, .user_link.money
+		width: 100%
+
+	.user_link.money
+		justify-content: flex-start
+		a
+			i
+				margin-right: 5px
+
+	.user_link.drop
+		padding-left: 113px
+		img
+			position: absolute
+			left: 40px
+			top: 50%
+			transform: translateY(-50%)
+
+	.user_link
+		border-right: none
+		text-align: left
+		padding-left: 40px
+		padding-right: 40px
+		a
+			i
+				margin-right: 45px
+
+	.arrow_user
+		position: absolute
+		right: 20px
+		top: 50%
+		transform: translateY(-50%)
+
+	.user-content
+		&_top
+			padding-left: 40px
+		&_middle
+			transform: translateY(0)
+		&-bottom
+			margin-top: 0
+
+	.user-middle
+		&_block
+			flex-direction: column
+			border-bottom: none
+		&_right
+			width: 100%
+		&_avatar
+			width: 60%
+			margin: 0 auto
+
+	.user-right_header
+		padding: 40px 20px 20px
+
+	.user-right_tabs
+		padding: 0
+
+	.flex-tabs
+		display: flex
+		margin-top: 20px
+		.tab-title
+			display: block
+			border-bottom: none
+			width: 30%
+			padding-top: 0
+			li
+				position: relative
+				width: 100%
+				text-align: left
+				padding-left: 20px
+				border-radius: 20px 0 0 20px
+				margin-bottom: 3px
+				&:last-child
+					margin-bottom: 0
+				span
+					position: absolute
+					right: 10px
+					top: 50%
+					transform: translateY(-50%)
+		.tab-content
+			border: 2px solid #cdcdcd
+			width: 70%
+			li
+				padding: 20px
+
+//Extra small: >0
++media-breakpoint-down(xs)
+
+	section
+		padding: 45px 0
+
+	.s-title
+		margin-bottom: 30px
+		h2
+			margin-bottom: 5px
+		span
+			font-size: 20px
+
+	.menu ul li
+		padding-left: 0
+		padding-right: 35px
+		font-size: 14px
+
+	.main-wrapper_group
+		width: 100%
+
+	.header-btn
+		margin-left: 20px
+
+	.main
+		&-title
+			h1, h2
+				font-size: 35px
+			h2
+				margin-bottom: 30px
+		&-top
+			&_cta
+				padding: 15px 10px 15px 35px
+				span
+					font-size: 21px
+
+	.blue-btn
+		width: 130px
+		padding: 7px 10px
+
+	.cta-left
+		font-size: 14px
+
+	.advantages
+    padding-top: 45px
+    &-item
+    	padding-top: 20px
+    	margin: 0 20px 20px
+    	&:last-child
+    		margin-bottom: 0
+
+	.start-item
+		&:nth-child(3)
+			margin-bottom: 50px
+
+	.footer
+		padding: 40px 0
+		text-align: center
+		&_logo
+			margin-bottom: 20px
+
+	.v-vilki-bk__name, .v-vilki-kf, .v-vilki-match__name, .v-vilki-rate__value
+		font-size: 13px
+
+	.v-vilki
+		&__container
+			padding: 10px 20px
+			background: #fff
+		&_header
+			padding: 20px 20px 10px
+		&-match
+			width: 33%
+		&-info__inner
+			align-items: flex-start
+
+	.v-filter
+		width: 100%
+		display: flex
+		align-items: center
+		padding: 10px 20px
+		&-panel
+			padding: 10px
+		&_name
+			width: 32%
+			text-align: right
+			margin-right: 25px
+		&_body
+			width: 60%
+
+	.second-page
+		.sidebar
+			padding: 15px 20px
+		.search-container
+			padding-right: 10px
+			padding-left: 70px
+
+	.v-vilki_button
+		padding: 11px
+
+	.user-wrapper
+		padding: 20px 20px 40px
+		background: #fff
+
+	.user-content_middle
+		padding: 0
+
+	.user-content
+		border: none
+		padding: 0
+
+	.user-avatar_item
+		padding: 20px
+
+	.user-middle_avatar
+		width: 100%
+
+	.user-right_header
+		padding-left: 0
+		span
+			font-size: 36px
+
+	.flex-tabs
+		.tab-title
+			width: 40%
+		.tab-content
+			width: 60%
+
+	.user-top
+    padding: 20px 20px 0
+
+	.user-content-bottom .user-right_tabs
+		padding: 10px 0
+
+	.user-content_comment
+		padding: 0
+
+	.registration
+		padding: 20px 0px 40px
+
+	.policy-title
+		padding: 25px 20px
+
+	.policy-wrap
+		padding: 40px 20px
+
+	.policy-content
+		padding: 40px 50px
+
+	.tariffs-pay span
+		margin-right: 0
+		margin-bottom: 10px
+		display: inline-block
+
+	.tariffs-bottom
+		padding: 0 20px
+		img
+			width: 100%
+
+	.modal
+		padding: 20px
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
